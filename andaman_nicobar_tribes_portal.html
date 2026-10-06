@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indigenous Tribes of Andaman & Nicobar Islands</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        island: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16',
+                        },
+                        ocean: {
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(8, 47, 73, 0.9) 0%, rgba(5, 46, 22, 0.85) 100%), url('https://placehold.co/1920x1080/082f49/ffffff?text=Andaman+Nicobar+Islands') center/cover no-repeat;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card-light {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+                    <i class="fa-solid fa-feather text-white text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block">A&N Indigenous Portal</span>
+                    <span class="text-xs text-emerald-400 font-medium">Heritage & Conservation Guide</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#overview" class="text-slate-300 hover:text-emerald-400 transition">Overview</a>
+                <a href="#tribes" class="text-slate-300 hover:text-emerald-400 transition">The 6 Tribes</a>
+                <a href="#github-guide" class="text-slate-300 hover:text-emerald-400 transition flex items-center gap-1.5">
+                    <i class="fa-brands fa-github text-base"></i> GitHub Host Guide
+                </a>
+            </nav>
+            <div>
+                <a href="#tribes" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition shadow-lg shadow-emerald-600/30">
+                    Explore Tribes
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-gradient relative min-h-[85vh] flex items-center justify-center text-center px-4 py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950 pointer-events-none"></div>
+        <div class="relative max-w-4xl mx-auto space-y-6 z-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold tracking-wide uppercase">
+                <i class="fa-solid fa-shield-heart text-emerald-400"></i> Protecting Vulnerable Heritages
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Guardians of the <span class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Emerald Islands</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Discover the ancestral heritage, unique customs, and vital conservation status of the indigenous Negrito and Mongoloid tribes of the Andaman and Nicobar archipelago.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#tribes" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-xl shadow-emerald-600/20 transition flex items-center gap-2">
+                    <i class="fa-solid fa-users"></i> View All Tribes
+                </a>
+                <a href="#github-guide" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3.5 rounded-xl transition flex items-center gap-2">
+                    <i class="fa-brands fa-github"></i> Host on GitHub Pages
+                </a>
+            </div>
+            
+            <!-- Quick Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-10">
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <div class="text-2xl font-bold text-emerald-400">6</div>
+                    <div class="text-xs text-slate-400 mt-1">Major Tribes</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <div class="text-2xl font-bold text-cyan-400">5</div>
+                    <div class="text-xs text-slate-400 mt-1">PVTGs (Vulnerable)</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <div class="text-2xl font-bold text-teal-400">2</div>
+                    <div class="text-xs text-slate-400 mt-1">Ethnic Lineages</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <div class="text-2xl font-bold text-emerald-400">100%</div>
+                    <div class="text-xs text-slate-400 mt-1">Protected Heritage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="py-20 bg-slate-900 border-t border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white tracking-tight mb-4">Two Distinct Ancestral Roots</h2>
+                <p class="text-slate-400">The indigenous peoples of the Andaman and Nicobar Islands are categorized into two primary ethnic groups based on geographical separation, genetics, and distinct cultural histories.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Andaman Group -->
+                <div class="bg-slate-950/60 border border-slate-800 p-8 rounded-3xl relative overflow-hidden group hover:border-emerald-500/50 transition">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl mb-6">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Andaman Islands (Negrito Descent)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Believed to have migrated from Africa tens of thousands of years ago. These hunter-gatherer tribes are characterized by dark skin, short stature, and deep connection to tropical forests and marine foraging.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-300 text-xs font-medium">Great Andamanese</span>
+                        <span class="px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-300 text-xs font-medium">Onge</span>
+                        <span class="px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-300 text-xs font-medium">Jarawa</span>
+                        <span class="px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-300 text-xs font-medium">Sentinelese</span>
+                    </div>
+                </div>
+
+                <!-- Nicobar Group -->
+                <div class="bg-slate-950/60 border border-slate-800 p-8 rounded-3xl relative overflow-hidden group hover:border-cyan-500/50 transition">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-6">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Nicobar Islands (Mongoloid Descent)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Sharing closer ethnic and linguistic ties with Southeast Asian populations. These communities practice horticulture, animal husbandry, and coastal fishing, with distinct societal structures.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-cyan-950 border border-cyan-800 text-cyan-300 text-xs font-medium">Nicobarese (Scheduled Tribe)</span>
+                        <span class="px-3 py-1 rounded-full bg-cyan-950 border border-cyan-800 text-cyan-300 text-xs font-medium">Shompen (PVTG)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tribes" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="text-emerald-400 text-sm font-semibold tracking-wider uppercase">Comprehensive Directory</span>
+                <h2 class="text-3xl font-extrabold text-white mt-1">Explore the 6 Major Tribes</h2>
+            </div>
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap gap-2 mt-6 md:mt-0">
+                <button onclick="filterTribes('all')" class="filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-600 text-white transition shadow-md">All Tribes</button>
+                <button onclick="filterTribes('andaman')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition">Andaman Group</button>
+                <button onclick="filterTribes('nicobar')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition">Nicobar Group</button>
+                <button onclick="filterTribes('pvtg')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition">PVTGs Only</button>
+            </div>
+        </div>
+
+        <!-- Tribe Cards Grid -->
+        <div id="tribe-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Great Andamanese -->
+            <div class="tribe-card bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-emerald-500/50 transition duration-300 shadow-xl" data-group="andaman" data-pvtg="true">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">PVTG Status</span>
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Strait Island</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Great Andamanese</h3>
+                    <p class="text-xs text-emerald-400 font-medium mb-4">Negrito Descent • Once 10 sub-tribes</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Once consisting of 10 distinct sub-tribes, numbers were drastically reduced due to colonial diseases and conflict. The surviving population has been resettled on Strait Island.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Lifestyle: Settled / Community</span>
+                    <button onclick="openModal('great-andamanese')" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold flex items-center gap-1 transition">
+                        Read More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2: Onge -->
+            <div class="tribe-card bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-emerald-500/50 transition duration-300 shadow-xl" data-group="andaman" data-pvtg="true">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">PVTG Status</span>
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Little Andaman</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Onge Tribe</h3>
+                    <p class="text-xs text-emerald-400 font-medium mb-4">Negrito Descent • Semi-Nomadic</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Semi-nomadic hunter-gatherers traditionally dependent on forest and coastal marine resources. Currently settled in two reserves at Dugong Creek and South Bay.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Lifestyle: Hunter-Gatherer</span>
+                    <button onclick="openModal('onge')" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold flex items-center gap-1 transition">
+                        Read More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3: Jarawa -->
+            <div class="tribe-card bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-emerald-500/50 transition duration-300 shadow-xl" data-group="andaman" data-pvtg="true">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">PVTG Status</span>
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> South & Middle Andaman</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Jarawa Tribe</h3>
+                    <p class="text-xs text-emerald-400 font-medium mb-4">Negrito Descent • Forest Nomads</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Inhabit the dense western forest reserves of South and Middle Andaman. They maintained strict isolation until the late 1990s and now have carefully monitored regulated interactions.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Lifestyle: Nomadic Foragers</span>
+                    <button onclick="openModal('jarawa')" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold flex items-center gap-1 transition">
+                        Read More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4: Sentinelese -->
+            <div class="tribe-card bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition duration-300 shadow-xl" data-group="andaman" data-pvtg="true">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">Uncontacted Tribe</span>
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i> North Sentinel Island</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Sentinelese</h3>
+                    <p class="text-xs text-amber-400 font-medium mb-4">Negrito Descent • Fully Uncontacted</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        One of the world's last fully uncontacted peoples. They live in absolute isolation on North Sentinel Island and fiercely resist any outside intrusion to protect their autonomy.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Lifestyle: Sovereign Hunter-Gatherers</span>
+                    <button onclick="openModal('sentinelese')" class="text-amber-400 hover:text-amber-300 text-sm font-semibold flex items-center gap-1 transition">
+                        Read More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 5: Nicobarese -->
+            <div class="tribe-card bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition duration-300 shadow-xl" data-group="nicobar" data-pvtg="false">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold border border-cyan-500/20">Scheduled Tribe</span>
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-cyan-400 mr-1"></i> Car Nicobar & Others</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Nicobarese Tribe</h3>
+                    <p class="text-xs text-cyan-400 font-medium mb-4">Mongoloid Descent • Horticultural Economy</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        The largest and most populous indigenous group across the Nicobar archipelago. They engage in coconut cultivation, pig herding, and have a vibrant community life with local governance.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Lifestyle: Horticultural & Coastal</span>
+                    <button onclick="openModal('nicobarese')" class="text-cyan-400 hover:text-cyan-300 text-sm font-semibold flex items-center gap-1 transition">
+                        Read More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 6: Shompen -->
+            <div class="tribe-card bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition duration-300 shadow-xl" data-group="nicobar" data-pvtg="true">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold border border-cyan-500/20">PVTG Status</span>
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-cyan-400 mr-1"></i> Great Nicobar Island</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Shompen Tribe</h3>
+                    <p class="text-xs text-cyan-400 font-medium mb-4">Mongoloid Descent • Deep Interior Foragers</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        A semi-nomadic, deeply isolated tribe residing in the dense interior biosphere of Great Nicobar Island. They rely on foraging, hunting wild pigs, and primitive yam cultivation.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Lifestyle: Semi-Nomadic Foragers</span>
+                    <button onclick="openModal('shompen')" class="text-cyan-400 hover:text-cyan-300 text-sm font-semibold flex items-center gap-1 transition">
+                        Read More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="github-guide" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase mb-3">
+                    <i class="fa-brands fa-github"></i> Host for Free
+                </div>
+                <h2 class="text-3xl font-bold text-white">How to Host This Site on GitHub Pages</h2>
+                <p class="text-slate-400 text-sm mt-2">Follow these 4 simple steps to deploy this exact webpage live on the internet using GitHub.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">1</span>
+                        <h4 class="text-white font-semibold">Create a New Repository</h4>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Go to <a href="https://github.com" target="_blank" class="text-emerald-400 underline">github.com</a>, log into your account, and click the green <strong>"New"</strong> button to create a new public repository (e.g., named <code class="text-emerald-300 bg-slate-900 px-1.5 py-0.5 rounded">andaman-tribes</code>).
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">2</span>
+                        <h4 class="text-white font-semibold">Save File as index.html</h4>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Copy all the code from this single file and save it locally on your computer with the exact filename: <code class="text-emerald-300 bg-slate-900 px-1.5 py-0.5 rounded">index.html</code>.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">3</span>
+                        <h4 class="text-white font-semibold">Upload to GitHub</h4>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Inside your new repository, click <strong>"uploading an existing file"</strong>, drag and drop your <code class="text-emerald-300 bg-slate-900 px-1.5 py-0.5 rounded">index.html</code> file into the browser window, and commit the changes.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">4</span>
+                        <h4 class="text-white font-semibold">Enable GitHub Pages</h4>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Go to your repository <strong>Settings</strong> > <strong>Pages</strong>. Under "Branch", select <code class="text-emerald-300 bg-slate-900 px-1.5 py-0.5 rounded">main</code> (or master) and root <code class="text-emerald-300 bg-slate-900 px-1.5 py-0.5 rounded">/ (root)</code>, then click <strong>Save</strong>!
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i> Your website will be live instantly at <code class="text-white font-mono">https://yourusername.github.io/repository-name</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="tribe-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 hidden">
+        <div id="modal-content-box" class="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl scale-95 opacity-0 transition-all duration-300">
+            <button onclick="closeModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div id="modal-body">
+                <!-- Dynamically injected tribe details -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <p>Indigenous Tribes of Andaman & Nicobar Islands • Educational & Heritage Resource Portal</p>
+            <p class="text-xs text-slate-600">Designed with modern responsive HTML5 & Tailwind CSS. Ready for GitHub Pages deployment.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tribe data dictionary for modals
+        const tribeData = {
+            "great-andamanese": {
+                title: "Great Andamanese Tribe",
+                badge: "PVTG Status • Andaman Group",
+                descent: "Negrito Descent",
+                lifestyle: "Settled Community / Sub-tribes",
+                location: "Strait Island, Andaman",
+                history: "Historically composed of 10 distinct sub-tribes (such as Kede, Bea, Bo, Jeru, etc.), the Great Andamanese suffered massive demographic collapse due to infectious diseases introduced during British colonization and punitive expeditions. Today, the surviving members have been resettled on Strait Island where they maintain cultural traditions while interacting with the broader administration."
+            },
+            "onge": {
+                title: "Onge Tribe",
+                badge: "PVTG Status • Andaman Group",
+                descent: "Negrito Descent",
+                lifestyle: "Hunter-Gatherer & Marine Foragers",
+                location: "Dugong Creek and South Bay, Little Andaman",
+                history: "The Onge are one of the indigenous Negrito peoples of Little Andaman Island. Traditionally semi-nomadic, they depend heavily on hunting wild pigs, collecting honey, and fishing in coastal waters. The administration has established settlements to assist them while preserving their traditional rights over forest reserves."
+            },
+            "jarawa": {
+                title: "Jarawa Tribe",
+                badge: "PVTG Status • Andaman Group",
+                descent: "Negrito Descent",
+                lifestyle: "Nomadic Foragers",
+                location: "Western forest reserves of South & Middle Andaman",
+                history: "For centuries, the Jarawa maintained a fiercely guarded isolation in the dense tropical rainforests of the western coast of Andaman. Until the late 1990s, interactions were mostly hostile. In recent years, they have begun limited and regulated friendly contact with outsiders, while strict legal protections guard their territory against encroachment."
+            },
+            "sentinelese": {
+                title: "Sentinelese Tribe",
+                badge: "Uncontacted Peoples • Andaman Group",
+                descent: "Negrito Descent",
+                lifestyle: "Sovereign Hunter-Gatherers",
+                location: "North Sentinel Island",
+                history: "The Sentinelese are widely recognized as one of the world's last uncontacted indigenous groups. Inhabiting the remote North Sentinel Island, they actively reject outside contact, defending their territory with bows and arrows. The Government of India enforces an absolute exclusion zone and strict legal prohibitions to protect their sovereign isolation and prevent fatal exposure to outside pathogens."
+            },
+            "nicobarese": {
+                title: "Nicobarese Tribe",
+                badge: "Scheduled Tribe • Nicobar Group",
+                descent: "Mongoloid Descent",
+                lifestyle: "Horticulture & Animal Husbandry",
+                location: "Car Nicobar, Nancowry, and other islands",
+                history: "The Nicobarese form the most populous and assimilated indigenous community in the archipelago. Unlike the Andaman PVTGs, they practice horticulture centered around coconut groves, plantains, and pig rearing. They have a rich traditional village council system (Captains) and have largely embraced Christianity alongside traditional beliefs."
+            },
+            "shompen": {
+                title: "Shompen Tribe",
+                badge: "PVTG Status • Nicobar Group",
+                descent: "Mongoloid Descent",
+                lifestyle: "Semi-Nomadic Foragers & Cultivators",
+                location: "Interior Biosphere of Great Nicobar Island",
+                history: "The Shompen are a semi-nomadic, deeply secluded tribe inhabiting the dense, rugged interior rainforests of Great Nicobar Island. They differ from coastal Nicobarese by speaking a distinct language, foraging wild roots, hunting pigs, and engaging in small-scale cultivation of pandanus and yams."
+            }
+        };
+
+        // Filter functionality
+        function filterTribes(category) {
+            const cards = document.querySelectorAll('.tribe-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update active button state
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-emerald-600', 'text-white', 'shadow-md');
+                btn.classList.add('bg-slate-900', 'border', 'border-slate-800', 'text-slate-300');
+            });
+            event.target.classList.remove('bg-slate-900', 'border', 'border-slate-800', 'text-slate-300');
+            event.target.classList.add('bg-emerald-600', 'text-white', 'shadow-md');
+
+            cards.forEach(card => {
+                const group = card.getAttribute('data-group');
+                const pvtg = card.getAttribute('data-pvtg');
+
+                if (category === 'all') {
+                    card.style.display = 'flex';
+                } else if (category === 'andaman' && group === 'andaman') {
+                    card.style.display = 'flex';
+                } else if (category === 'nicobar' && group === 'nicobar') {
+                    card.style.display = 'flex';
+                } else if (category === 'pvtg' && pvtg === 'true') {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Modal functionality
+        function openModal(tribeKey) {
+            const data = tribeData[tribeKey];
+            if (!data) return;
+
+            const modalBody = document.getElementById('modal-body');
+            modalBody.innerHTML = `
+                <div class="space-y-4">
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20 inline-block">${data.badge}</span>
+                    <h2 class="text-3xl font-bold text-white">${data.title}</h2>
+                    <div class="grid grid-cols-2 gap-4 pt-2 pb-4 border-b border-slate-800 text-sm">
+                        <div>
+                            <span class="text-slate-400 block text-xs">Descent</span>
+                            <strong class="text-emerald-400">${data.descent}</strong>
+                        </div>
+                        <div>
+                            <span class="text-slate-400 block text-xs">Region</span>
+                            <strong class="text-cyan-400">${data.location}</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-300 mb-1">Traditional Lifestyle & Habitat</h4>
+                        <p class="text-slate-300 text-sm bg-slate-950 p-3.5 rounded-xl border border-slate-800">${data.lifestyle}</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-300 mb-1">History & Conservation Status</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed pt-1">${data.history}</p>
+                    </div>
+                </div>
+            `;
+
+            const modal = document.getElementById('tribe-modal');
+            const box = document.getElementById('modal-content-box');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                box.classList.remove('scale-95', 'opacity-0');
+                box.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('tribe-modal');
+            const box = document.getElementById('modal-content-box');
+            box.classList.remove('scale-100', 'opacity-100');
+            box.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Close modal on background click
+        window.onclick = function(event) {
+            const modal = document.getElementById('tribe-modal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
